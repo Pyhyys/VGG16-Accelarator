@@ -1,0 +1,162 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'vgg' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : vgg
+Version: O-2018.06
+Date   : Thu Dec 14 05:36:19 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+  Startpoint: line_buffer/line_buffer_2_reg_1__5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: genblk1_4__bias_relu/pixel_write_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vgg                Zero                  sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  line_buffer/line_buffer_2_reg_1__5_/CK (DFFRPQ_X2M_A9TR)
+                                                          0.00 #     0.00 r
+  line_buffer/line_buffer_2_reg_1__5_/Q (DFFRPQ_X2M_A9TR)
+                                                          0.11       0.11 r
+  line_buffer/matrix[68] (line_buffer)                    0.00       0.11 r
+  U37/Y (BUFH_X1M_A9TR)                                   0.34       0.45 r
+  genblk1_4__cnn/matrix_in[68] (cnn_4)                    0.00       0.45 r
+  genblk1_4__cnn/mult_26_5_I8/a[5] (cnn_4_DW_mult_uns_7)
+                                                          0.00       0.45 r
+  genblk1_4__cnn/mult_26_5_I8/U374/Y (INV_X1M_A9TR)       0.13       0.57 f
+  genblk1_4__cnn/mult_26_5_I8/U523/Y (XNOR2_X0P5M_A9TR)
+                                                          0.15       0.72 f
+  genblk1_4__cnn/mult_26_5_I8/U360/Y (NOR2_X1A_A9TR)      0.15       0.88 r
+  genblk1_4__cnn/mult_26_5_I8/U352/Y (INV_X1M_A9TR)       0.05       0.93 f
+  genblk1_4__cnn/mult_26_5_I8/U471/Y (OAI22_X0P5M_A9TR)
+                                                          0.09       1.01 r
+  genblk1_4__cnn/mult_26_5_I8/U470/Y (XNOR2_X0P5M_A9TR)
+                                                          0.06       1.07 f
+  genblk1_4__cnn/mult_26_5_I8/U103/S (ADDH_X1M_A9TR)      0.12       1.19 r
+  genblk1_4__cnn/mult_26_5_I8/U65/CO (ADDF_X1M_A9TR)      0.09       1.28 r
+  genblk1_4__cnn/mult_26_5_I8/U64/CO (ADDF_X1M_A9TR)      0.08       1.37 r
+  genblk1_4__cnn/mult_26_5_I8/U63/CO (ADDF_X1M_A9TR)      0.08       1.45 r
+  genblk1_4__cnn/mult_26_5_I8/U62/CO (ADDF_X1M_A9TR)      0.08       1.53 r
+  genblk1_4__cnn/mult_26_5_I8/U61/CO (ADDF_X1M_A9TR)      0.08       1.62 r
+  genblk1_4__cnn/mult_26_5_I8/U60/CO (ADDF_X1M_A9TR)      0.08       1.70 r
+  genblk1_4__cnn/mult_26_5_I8/U59/CO (ADDF_X1M_A9TR)      0.08       1.78 r
+  genblk1_4__cnn/mult_26_5_I8/U58/CO (ADDF_X1M_A9TR)      0.08       1.87 r
+  genblk1_4__cnn/mult_26_5_I8/U57/CO (ADDF_X1M_A9TR)      0.08       1.95 r
+  genblk1_4__cnn/mult_26_5_I8/U56/CO (ADDF_X1M_A9TR)      0.08       2.03 r
+  genblk1_4__cnn/mult_26_5_I8/U55/CO (ADDF_X1M_A9TR)      0.08       2.12 r
+  genblk1_4__cnn/mult_26_5_I8/U54/CO (ADDF_X1M_A9TR)      0.08       2.20 r
+  genblk1_4__cnn/mult_26_5_I8/U53/CO (ADDF_X1M_A9TR)      0.08       2.28 r
+  genblk1_4__cnn/mult_26_5_I8/U52/CO (ADDF_X1M_A9TR)      0.08       2.37 r
+  genblk1_4__cnn/mult_26_5_I8/U51/CO (ADDF_X1M_A9TR)      0.08       2.45 r
+  genblk1_4__cnn/mult_26_5_I8/U50/CO (ADDF_X1M_A9TR)      0.08       2.53 r
+  genblk1_4__cnn/mult_26_5_I8/U49/CO (ADDF_X1M_A9TR)      0.08       2.61 r
+  genblk1_4__cnn/mult_26_5_I8/U48/CO (ADDF_X1M_A9TR)      0.08       2.70 r
+  genblk1_4__cnn/mult_26_5_I8/U47/CO (ADDF_X1M_A9TR)      0.08       2.78 r
+  genblk1_4__cnn/mult_26_5_I8/U46/CO (ADDF_X1M_A9TR)      0.08       2.86 r
+  genblk1_4__cnn/mult_26_5_I8/U45/S (ADDF_X1M_A9TR)       0.12       2.98 f
+  genblk1_4__cnn/mult_26_5_I8/product[23] (cnn_4_DW_mult_uns_7)
+                                                          0.00       2.98 f
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/B[23] (cnn_4_DW01_add_4)
+                                                          0.00       2.98 f
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/U1_23/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.07 f
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/U5/Y (AOI222_X0P5M_A9TR)
+                                                          0.13       3.21 r
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/U3/Y (XOR2_X0P7M_A9TR)
+                                                          0.05       3.26 f
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/U4/Y (INV_X1M_A9TR)
+                                                          0.21       3.47 r
+  genblk1_4__cnn/add_6_root_add_0_root_add_42_2/SUM[25] (cnn_4_DW01_add_4)
+                                                          0.00       3.47 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/A[25] (cnn_4_DW01_add_2)
+                                                          0.00       3.47 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_25/CO (ADDF_X1M_A9TR)
+                                                          0.17       3.63 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_26/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.72 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_27/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.81 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_28/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.90 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_29/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.98 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_30/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.07 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_31/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.16 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_32/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.24 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_33/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.33 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_34/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.42 r
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/U1_35/S (ADDF_X1M_A9TR)
+                                                          0.12       4.54 f
+  genblk1_4__cnn/add_2_root_add_0_root_add_42_2/SUM[35] (cnn_4_DW01_add_2)
+                                                          0.00       4.54 f
+  genblk1_4__cnn/add_1_root_add_0_root_add_42_2/B[35] (cnn_4_DW01_add_1)
+                                                          0.00       4.54 f
+  genblk1_4__cnn/add_1_root_add_0_root_add_42_2/U1_35/S (ADDF_X1M_A9TR)
+                                                          0.12       4.66 r
+  genblk1_4__cnn/add_1_root_add_0_root_add_42_2/SUM[35] (cnn_4_DW01_add_1)
+                                                          0.00       4.66 r
+  genblk1_4__cnn/add_0_root_add_0_root_add_42_2/B[35] (cnn_4_DW01_add_0)
+                                                          0.00       4.66 r
+  genblk1_4__cnn/add_0_root_add_0_root_add_42_2/U1_35/S (ADDF_X1M_A9TR)
+                                                          0.13       4.80 f
+  genblk1_4__cnn/add_0_root_add_0_root_add_42_2/SUM[35] (cnn_4_DW01_add_0)
+                                                          0.00       4.80 f
+  genblk1_4__cnn/pixel[35] (cnn_4)                        0.00       4.80 f
+  genblk1_4__bias_relu/pixel[35] (bias_relu_4)            0.00       4.80 f
+  genblk1_4__bias_relu/add_20/B[35] (bias_relu_4_DW01_add_1)
+                                                          0.00       4.80 f
+  genblk1_4__bias_relu/add_20/U1_35/S (ADDF_X1M_A9TR)     0.13       4.92 r
+  genblk1_4__bias_relu/add_20/SUM[35] (bias_relu_4_DW01_add_1)
+                                                          0.00       4.92 r
+  genblk1_4__bias_relu/add_21/A[35] (bias_relu_4_DW01_add_0)
+                                                          0.00       4.92 r
+  genblk1_4__bias_relu/add_21/U1_35/S (ADDF_X1M_A9TR)     0.12       5.05 f
+  genblk1_4__bias_relu/add_21/SUM[35] (bias_relu_4_DW01_add_0)
+                                                          0.00       5.05 f
+  genblk1_4__bias_relu/U89/Y (INV_X1M_A9TR)               0.03       5.07 r
+  genblk1_4__bias_relu/U118/Y (OAI31_X0P5M_A9TR)          0.04       5.11 f
+  genblk1_4__bias_relu/U119/Y (NAND2_X0P5A_A9TR)          0.04       5.15 r
+  genblk1_4__bias_relu/U13/Y (AND2_X1B_A9TR)              0.06       5.21 r
+  genblk1_4__bias_relu/U8/Y (BUFH_X1M_A9TR)               0.08       5.29 r
+  genblk1_4__bias_relu/U18/Y (AOI22_X1M_A9TR)             0.06       5.35 f
+  genblk1_4__bias_relu/U17/Y (AO1B2_X1M_A9TR)             0.03       5.39 r
+  genblk1_4__bias_relu/pixel_write_reg_0_/D (DFFRPQ_X2M_A9TR)
+                                                          0.00       5.39 r
+  data arrival time                                                  5.39
+
+  clock clk (rise edge)                                   5.50       5.50
+  clock network delay (ideal)                             0.00       5.50
+  genblk1_4__bias_relu/pixel_write_reg_0_/CK (DFFRPQ_X2M_A9TR)
+                                                          0.00       5.50 r
+  library setup time                                     -0.04       5.46
+  data required time                                                 5.46
+  --------------------------------------------------------------------------
+  data required time                                                 5.46
+  data arrival time                                                 -5.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1

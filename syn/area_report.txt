@@ -1,0 +1,219 @@
+ 
+****************************************
+Report : area
+Design : vgg
+Version: O-2018.06
+Date   : Thu Dec 14 05:36:19 2023
+****************************************
+
+Library(s) Used:
+
+    sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /EDA_Tools/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
+
+Number of ports:                        18301
+Number of nets:                         55004
+Number of cells:                        30653
+Number of combinational cells:          25992
+Number of sequential cells:              4485
+Number of macros/black boxes:               0
+Number of buf/inv:                       4527
+Number of references:                      19
+
+Combinational area:              46470.411786
+Buf/Inv area:                     2228.083171
+Noncombinational area:           20343.958991
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 66814.370777
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------
+vgg                               66814.3708    100.0     34.7004      0.0000  0.0000  vgg
+control                             889.9632      1.3    260.8200    462.6720  0.0000  control
+control/add_177                      33.7932      0.1     33.7932      0.0000  0.0000  control_DW01_inc_4
+control/add_231                      33.7932      0.1     33.7932      0.0000  0.0000  control_DW01_inc_3
+control/add_259                      33.7932      0.1     33.7932      0.0000  0.0000  control_DW01_inc_2
+control/add_352                      15.6492      0.0     15.6492      0.0000  0.0000  control_DW01_inc_1
+control/add_368                      33.7932      0.1     33.7932      0.0000  0.0000  control_DW01_inc_0
+control/r392                         15.6492      0.0     15.6492      0.0000  0.0000  control_DW01_inc_6
+genblk1_0__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_0
+genblk1_0__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_0_DW01_add_1
+genblk1_0__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_0_DW01_add_0
+genblk1_0__cnn                     5330.4803      8.0      6.8040      0.0000  0.0000  cnn_0
+genblk1_0__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_0_DW01_add_0
+genblk1_0__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_0_DW01_add_1
+genblk1_0__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_0_DW01_add_2
+genblk1_0__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_0_DW01_add_5
+genblk1_0__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_0_DW01_add_6
+genblk1_0__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_0_DW01_add_7
+genblk1_0__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_0_DW01_add_4
+genblk1_0__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_0_DW01_add_3
+genblk1_0__cnn/mult_26_5            491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_0
+genblk1_0__cnn/mult_26_5_I2         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_1
+genblk1_0__cnn/mult_26_5_I3         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_2
+genblk1_0__cnn/mult_26_5_I4         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_3
+genblk1_0__cnn/mult_26_5_I5         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_4
+genblk1_0__cnn/mult_26_5_I6         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_5
+genblk1_0__cnn/mult_26_5_I7         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_6
+genblk1_0__cnn/mult_26_5_I8         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_7
+genblk1_0__cnn/mult_26_5_I9         491.9292      0.7    491.9292      0.0000  0.0000  cnn_0_DW_mult_uns_8
+genblk1_1__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_7
+genblk1_1__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_7_DW01_add_1
+genblk1_1__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_7_DW01_add_0
+genblk1_1__cnn                     5310.0683      7.9      0.6804      0.0000  0.0000  cnn_7
+genblk1_1__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_7_DW01_add_0
+genblk1_1__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_7_DW01_add_1
+genblk1_1__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_7_DW01_add_2
+genblk1_1__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_7_DW01_add_5
+genblk1_1__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_7_DW01_add_6
+genblk1_1__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_7_DW01_add_7
+genblk1_1__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_7_DW01_add_4
+genblk1_1__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_7_DW01_add_3
+genblk1_1__cnn/mult_26_5            490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_0
+genblk1_1__cnn/mult_26_5_I2         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_1
+genblk1_1__cnn/mult_26_5_I3         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_2
+genblk1_1__cnn/mult_26_5_I4         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_3
+genblk1_1__cnn/mult_26_5_I5         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_4
+genblk1_1__cnn/mult_26_5_I6         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_5
+genblk1_1__cnn/mult_26_5_I7         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_6
+genblk1_1__cnn/mult_26_5_I8         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_7
+genblk1_1__cnn/mult_26_5_I9         490.3416      0.7    490.3416      0.0000  0.0000  cnn_7_DW_mult_uns_8
+genblk1_2__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_6
+genblk1_2__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_6_DW01_add_1
+genblk1_2__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_6_DW01_add_0
+genblk1_2__cnn                     5314.1507      8.0      0.6804      0.0000  0.0000  cnn_6
+genblk1_2__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_6_DW01_add_0
+genblk1_2__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_6_DW01_add_1
+genblk1_2__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_6_DW01_add_2
+genblk1_2__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_6_DW01_add_5
+genblk1_2__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_6_DW01_add_6
+genblk1_2__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_6_DW01_add_7
+genblk1_2__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_6_DW01_add_4
+genblk1_2__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_6_DW01_add_3
+genblk1_2__cnn/mult_26_5            490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_0
+genblk1_2__cnn/mult_26_5_I2         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_1
+genblk1_2__cnn/mult_26_5_I3         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_2
+genblk1_2__cnn/mult_26_5_I4         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_3
+genblk1_2__cnn/mult_26_5_I5         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_4
+genblk1_2__cnn/mult_26_5_I6         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_5
+genblk1_2__cnn/mult_26_5_I7         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_6
+genblk1_2__cnn/mult_26_5_I8         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_7
+genblk1_2__cnn/mult_26_5_I9         490.7952      0.7    490.7952      0.0000  0.0000  cnn_6_DW_mult_uns_8
+genblk1_3__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_5
+genblk1_3__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_5_DW01_add_1
+genblk1_3__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_5_DW01_add_0
+genblk1_3__cnn                     5314.1507      8.0      0.6804      0.0000  0.0000  cnn_5
+genblk1_3__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_5_DW01_add_0
+genblk1_3__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_5_DW01_add_1
+genblk1_3__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_5_DW01_add_2
+genblk1_3__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_5_DW01_add_5
+genblk1_3__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_5_DW01_add_6
+genblk1_3__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_5_DW01_add_7
+genblk1_3__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_5_DW01_add_4
+genblk1_3__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_5_DW01_add_3
+genblk1_3__cnn/mult_26_5            490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_0
+genblk1_3__cnn/mult_26_5_I2         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_1
+genblk1_3__cnn/mult_26_5_I3         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_2
+genblk1_3__cnn/mult_26_5_I4         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_3
+genblk1_3__cnn/mult_26_5_I5         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_4
+genblk1_3__cnn/mult_26_5_I6         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_5
+genblk1_3__cnn/mult_26_5_I7         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_6
+genblk1_3__cnn/mult_26_5_I8         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_7
+genblk1_3__cnn/mult_26_5_I9         490.7952      0.7    490.7952      0.0000  0.0000  cnn_5_DW_mult_uns_8
+genblk1_4__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_4
+genblk1_4__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_4_DW01_add_1
+genblk1_4__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_4_DW01_add_0
+genblk1_4__cnn                     5322.3155      8.0      0.6804      0.0000  0.0000  cnn_4
+genblk1_4__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_4_DW01_add_0
+genblk1_4__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_4_DW01_add_1
+genblk1_4__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_4_DW01_add_2
+genblk1_4__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_4_DW01_add_5
+genblk1_4__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_4_DW01_add_6
+genblk1_4__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_4_DW01_add_7
+genblk1_4__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_4_DW01_add_4
+genblk1_4__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_4_DW01_add_3
+genblk1_4__cnn/mult_26_5            491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_0
+genblk1_4__cnn/mult_26_5_I2         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_1
+genblk1_4__cnn/mult_26_5_I3         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_2
+genblk1_4__cnn/mult_26_5_I4         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_3
+genblk1_4__cnn/mult_26_5_I5         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_4
+genblk1_4__cnn/mult_26_5_I6         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_5
+genblk1_4__cnn/mult_26_5_I7         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_6
+genblk1_4__cnn/mult_26_5_I8         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_7
+genblk1_4__cnn/mult_26_5_I9         491.7024      0.7    491.7024      0.0000  0.0000  cnn_4_DW_mult_uns_8
+genblk1_5__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_3
+genblk1_5__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_3_DW01_add_1
+genblk1_5__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_3_DW01_add_0
+genblk1_5__cnn                     5322.3155      8.0      0.6804      0.0000  0.0000  cnn_3
+genblk1_5__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_3_DW01_add_0
+genblk1_5__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_3_DW01_add_1
+genblk1_5__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_3_DW01_add_2
+genblk1_5__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_3_DW01_add_5
+genblk1_5__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_3_DW01_add_6
+genblk1_5__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_3_DW01_add_7
+genblk1_5__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_3_DW01_add_4
+genblk1_5__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_3_DW01_add_3
+genblk1_5__cnn/mult_26_5            491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_0
+genblk1_5__cnn/mult_26_5_I2         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_1
+genblk1_5__cnn/mult_26_5_I3         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_2
+genblk1_5__cnn/mult_26_5_I4         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_3
+genblk1_5__cnn/mult_26_5_I5         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_4
+genblk1_5__cnn/mult_26_5_I6         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_5
+genblk1_5__cnn/mult_26_5_I7         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_6
+genblk1_5__cnn/mult_26_5_I8         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_7
+genblk1_5__cnn/mult_26_5_I9         491.7024      0.7    491.7024      0.0000  0.0000  cnn_3_DW_mult_uns_8
+genblk1_6__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_2
+genblk1_6__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_2_DW01_add_1
+genblk1_6__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_2_DW01_add_0
+genblk1_6__cnn                     5322.3155      8.0      0.6804      0.0000  0.0000  cnn_2
+genblk1_6__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_2_DW01_add_0
+genblk1_6__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_2_DW01_add_1
+genblk1_6__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_2_DW01_add_2
+genblk1_6__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_2_DW01_add_5
+genblk1_6__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_2_DW01_add_6
+genblk1_6__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_2_DW01_add_7
+genblk1_6__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_2_DW01_add_4
+genblk1_6__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_2_DW01_add_3
+genblk1_6__cnn/mult_26_5            491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_0
+genblk1_6__cnn/mult_26_5_I2         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_1
+genblk1_6__cnn/mult_26_5_I3         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_2
+genblk1_6__cnn/mult_26_5_I4         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_3
+genblk1_6__cnn/mult_26_5_I5         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_4
+genblk1_6__cnn/mult_26_5_I6         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_5
+genblk1_6__cnn/mult_26_5_I7         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_6
+genblk1_6__cnn/mult_26_5_I8         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_7
+genblk1_6__cnn/mult_26_5_I9         491.7024      0.7    491.7024      0.0000  0.0000  cnn_2_DW_mult_uns_8
+genblk1_7__bias_relu                545.6808      0.8    123.3792    163.2960  0.0000  bias_relu_1
+genblk1_7__bias_relu/add_20         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_1_DW01_add_1
+genblk1_7__bias_relu/add_21         129.5028      0.2    129.5028      0.0000  0.0000  bias_relu_1_DW01_add_0
+genblk1_7__cnn                     5322.3155      8.0      0.6804      0.0000  0.0000  cnn_1
+genblk1_7__cnn/add_0_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_1_DW01_add_0
+genblk1_7__cnn/add_1_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_1_DW01_add_1
+genblk1_7__cnn/add_2_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_1_DW01_add_2
+genblk1_7__cnn/add_3_root_add_0_root_add_42_2   129.5028     0.2   129.5028     0.0000 0.0000 cnn_1_DW01_add_5
+genblk1_7__cnn/add_4_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_1_DW01_add_6
+genblk1_7__cnn/add_5_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_1_DW01_add_7
+genblk1_7__cnn/add_6_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_1_DW01_add_4
+genblk1_7__cnn/add_7_root_add_0_root_add_42_2    94.5756     0.1    94.5756     0.0000 0.0000 cnn_1_DW01_add_3
+genblk1_7__cnn/mult_26_5            491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_0
+genblk1_7__cnn/mult_26_5_I2         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_1
+genblk1_7__cnn/mult_26_5_I3         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_2
+genblk1_7__cnn/mult_26_5_I4         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_3
+genblk1_7__cnn/mult_26_5_I5         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_4
+genblk1_7__cnn/mult_26_5_I6         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_5
+genblk1_7__cnn/mult_26_5_I7         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_6
+genblk1_7__cnn/mult_26_5_I8         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_7
+genblk1_7__cnn/mult_26_5_I9         491.7024      0.7    491.7024      0.0000  0.0000  cnn_1_DW_mult_uns_8
+line_buffer                       18966.1491     28.4    391.2300  18574.9191  0.0000  line_buffer
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------
+Total                                                  46470.4118  20343.9590  0.0000
+
+1
